@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/lt77777/Typescript-starter-project/issues"
   },
-  "homepage": "https://github.com/lt77777/Typescript-starter-project#readme"
+  "homepage": "https://github.com/lt77777/Typescript-starter-project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0"
+  }
 }
