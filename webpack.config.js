@@ -15,6 +15,54 @@ module.exports = {
                 test: /\.ts$/,
                 use: 'ts-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.p?(css)$/i,
+                oneOf: [
+                    {
+                        resourceQuery: /module/,
+                        use: [
+                            MiniCssExtractPlugin.loader,
+                            {
+                                loader: 'css-loader',
+                                options: {
+                                    url: false,
+                                    sourceMap: env.production !== true,
+                                    importLoaders: 1,
+                                    modules: {
+                                        localIdentName: '[local]_[hash:base64:5]'
+                                    }
+                                }
+                            },
+                            {
+                                loader: 'postcss-loader',
+                                options: {
+                                    sourceMap: env.production !== true
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        use: [
+                            MiniCssExtractPlugin.loader,
+                            {
+                                loader: 'css-loader',
+                                options: {
+                                    url: false,
+                                    sourceMap: env.production !== true,
+                                    importLoaders: 1,
+                                    modules: false
+                                }
+                            },
+                            {
+                                loader: 'postcss-loader',
+                                options: {
+                                    sourceMap: env.production !== true
+                                }
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
