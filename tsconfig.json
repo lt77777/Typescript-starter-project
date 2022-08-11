@@ -5,7 +5,7 @@
         "module": "es6",
         "target": "es6",
         "allowJs": false,
-        "types": ["node"],
+        "types": ["node", "jest"],
         "typeRoots": ["./assets/js/types", "node_modules/@types"],
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
