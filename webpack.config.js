@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     context: path.join(__dirname, 'app'),
     entry: [
-        './js/app.js',
+        './ts/app.ts',
     ],
     output: {
         path: path.join(__dirname, 'public'),
