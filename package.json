@@ -9,7 +9,8 @@
         "serve": "webpack serve",
         "build": "webpack",
         "lint": "npx eslint ./app/",
-        "lint:watch": "npx esw --ext .js,.ts ./app --watch"
+        "lint:watch": "npx esw --ext .js,.ts ./app --watch",
+        "cypress:open": "cypress open"
     },
     "repository": {
         "type": "git",
