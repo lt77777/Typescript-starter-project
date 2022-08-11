@@ -6,7 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "serve": "webpack serve",
-        "build": "webpack"
+        "build": "webpack",
+        "lint": "npx eslint ./app/",
+        "lint:watch": "npx esw --ext .js,.ts ./app --watch"
     },
     "repository": {
         "type": "git",
