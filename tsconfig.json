@@ -9,18 +9,8 @@
         "typeRoots": ["./assets/js/types", "node_modules/@types"],
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
-        "lib": [
-            "es2019",
-            "dom",
-            "dom.iterable"
-        ],
+        "lib": ["es2019", "dom", "dom.iterable"]
     },
-    "moduleDirectories": [
-        "node_modules",
-        "assets"
-    ],
-    "exclude": [
-        "./node_modules",
-        "./public",
-    ]
+    "moduleDirectories": ["node_modules", "assets"],
+    "exclude": ["./node_modules", "./public"]
 }
